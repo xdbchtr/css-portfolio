@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #8d99ae;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 20px;
+  margin: 0;
+}
+
+.navbar {
+  background: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: fit-content;
+  height: 25px;
+  top: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px 5px rgba(181, 176, 176, 0.3);
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 3px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.navbar-items .highlighted {
+  color: #ef233c;
+}
+
+.navbar-items a:hover,
+.navbar-items a:active {
+    color: #ef233c;
+    transition: 0.3s;
+}
+
+.container {
+  max-width: 60rem;
+  width : 100%;
+  height:fit-content;
+  /* min-height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  background: #EDF2F4;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.main-footer {
+  background: #d90429;
+  padding: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.main-footer__link {
+  margin: 0.5rem 0;
+}
+
+.main-footer__license {
+  margin-top: 10px;
+}
+
+.main-footer__license a {
+  color: #edf2f4;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.main-footer__link a {
+  color: #edf2f4;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    max-width: fit-content;
+  }
+
+  .main-footer {
+    padding: 1rem;
+  }
+
+  .main-footer__link a {
+    font-size: 10px;
+  }
+
+  .main-footer__license {
+    font-size: 10px;
+  }
+}

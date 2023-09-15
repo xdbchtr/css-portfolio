@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;700&display=swap');
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content:center;
+  gap: 10px;
+  padding: 30px;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: fit-content;
+  width: 800px;
+  min-height: 200px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: fit-content;
+  width: 100%;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  color: #2b2d42;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.subtitle {
+  display: flex;
+  width: 100%;
+  font-family: 'Heebo', sans-serif;
+  font-size: 1rem;
+  animation: fadeText 4s forwards alternate;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  align-items: center; /* Vertically center the content */
+}
+
+.logos__item {
+  width: 10%;
+}
+
+.logos i {
+  font-size: 30px;
+  width: 100%;
+  color: #333;
+}
+
+.logos i:hover,
+.logos i:active {
+    color: #d90429;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#project-btn {
+  background: #d90429;
+  color: white;
+  width: 10rem;
+  height: 2.5rem;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+}
+
+#project-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+#project-btn:hover,
+#project-btn:active {
+  color: black;
+  background: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#project-btn:hover a,
+#project-btn:active a {
+  color: black;
+}
+
+.picture {
+  height: 300px;
+  width: 35%;
+  animation: wiggle 3s infinite;
+  border-radius: 2rem;
+  background: url('./resources/homepage.jpg') left 50% bottom 60%/cover no-repeat border-box;
+}
+
+.article {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px 5px rgba(181, 176, 176, 0.3);
+  border-radius: 20px;
+}
+
+.article-title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.article-title h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1rem;
+}
+
+.article-title i {
+  margin: 0 10px;
+}
+
+.article-contents {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-contents__item {
+  width: 90%;
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.article-contents__item h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1.5rem;
+  color: #2b2d42;
+}
+
+.work {
+  width: 48%;
+  height: fit-content;
+  box-shadow: 0 0 5px 5px rgba(181, 176, 176, 0.3);
+  border-radius: 20px;
+}
+
+.work-title {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+.work-title h2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 1rem;
+}
+
+.work-title i {
+  margin: 0 10px;
+}
+
+.work-contents {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: fit-content;
+  align-items: center; /* Center horizontally */
+  padding: 10px;
+  gap: 10px;
+}
+
+.work-contents__item {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-logo {
+  height: 50px;
+  width: 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the image fits within the circular container */
+  border-radius: 50%; /* Make the image circular */
+  box-shadow: 0 0 5px 5px rgba(181, 176, 176, 0.3);
+}
+
+.work-info {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.work-info__title {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.work-info__title h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.work-info__position {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.work-info__position h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.work-period {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-period p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes fadeText {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .work-contents {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .work-contents__item {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .company-logo {
+    height: 35px;
+    width: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-info__title h2 {
+    font-size: 0.6rem;
+  }
+
+  .work-info__position h4 {
+    font-size: 10px;
+  }
+
+  .work-period p {
+    font-size: 8px;
+  }
+
+  .intro {
+    width: 100%;
+    height: 200px;
+  }
+
+  .title {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.7rem;
+    animation: fadeText 4s forwards alternate;
+  }
+
+  .picture {
+    display: none;
+  }
+
+  .logos {
+    width: 100%;
+    height: 35px;
+    align-items: center; /* Vertically center the content */
+  }
+
+  .logos__item {
+    width: 10%;
+  }
+  
+  .logos i {
+    font-size: 20px;
+  }
+
+  #project-btn {
+    width: 6rem;
+    height: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 0.2rem;
+    font-size: 0.5rem;
+  }
+}
